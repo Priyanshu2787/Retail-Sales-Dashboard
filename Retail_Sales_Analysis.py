@@ -6,9 +6,9 @@ import plotly.express as px
 import streamlit as st
 
 # Load data
-customers = pd.read_csv("customers.csv")
-products = pd.read_csv("products.csv")
-sales = pd.read_csv("sales.csv")
+customers = pd.read_csv("data/customers.csv")
+products = pd.read_csv("data/products.csv")
+sales = pd.read_csv("data/sales.csv")
 
 # Preprocessing
 sales['sale_date'] = pd.to_datetime(sales['sale_date'])
